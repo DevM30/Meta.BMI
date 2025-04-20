@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meta BMI</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer ></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
       .footer .info {
@@ -18,11 +18,11 @@
       }
   
       @keyframes backgroundCycle {
-        0%   { background-color: #e2b026; }   
-        25%  { background-color: #f89808; }   
-        50%  { background-color: #f07c0f; }   
-        75%  { background-color: #e77447; }   
-        100% { background-color: #eeb44a; }   
+        0%   { background-color: #6b3f27; }   
+        25%  { background-color: #6d3f32; }   
+        50%  { background-color: #6b473b; }   
+        75%  { background-color: #664138; }   
+        100% { background-color: #5a382b; }   
       }
 </style>
   
@@ -32,36 +32,36 @@
         <div class="leaves">
           <div><img src="png1-effect1.png" alt=""></div>
           <div><img src="png2-effect2.png" alt=""></div>
-          <div><img src="png4-effect4.png" alt=""></div>
-          <div><img src="png2-effect2.png" alt=""></div>
           <div><img src="png1-effect1.png" alt=""></div>
           <div><img src="png2-effect2.png" alt=""></div>
+          <div><img src="png1-effect1.png" alt=""></div>
           <div><img src="png4-effect4.png" alt=""></div>
+          <div><img src="png1-effect1.png" alt=""></div>
         </div>
         <div class="leaves set2">
           <div><img src="png1-effect1.png" alt=""></div>
           <div><img src="png2-effect2.png" alt=""></div>
-          <div><img src="png2-effect2.png" alt=""></div>
+          <div><img src="png1-effect1.png" alt=""></div>
           <div><img src="png4-effect4.png" alt=""></div>
           <div><img src="png1-effect1.png" alt=""></div>
           <div><img src="png2-effect2.png" alt=""></div>
-          <div><img src="png4-effect4.png" alt=""></div>
+          <div><img src="png1-effect1.png" alt=""></div>
         </div>
         <div class="leaves set3">
           <div><img src="png1-effect1.png" alt=""></div>
           <div><img src="png2-effect2.png" alt=""></div>
-          <div><img src="png4-effect4.png" alt=""></div>
-          <div><img src="png2-effect2.png" alt=""></div>
           <div><img src="png1-effect1.png" alt=""></div>
           <div><img src="png2-effect2.png" alt=""></div>
+          <div><img src="png1-effect1.png" alt=""></div>
           <div><img src="png4-effect4.png" alt=""></div>
+          <div><img src="png1-effect1.png" alt=""></div>
         </div>
       </section>
       <div class="text1">
         <h1>Welcome to <br> Meta BMI</h1> 
       </div>
       <div class="text2">
-        <h3> " As leaves fall, let unhealthy <br> habits drop too. Embrace <br> balance ~ just like trees do. " </h3>
+        <h3> " As leaves fall, let unhealthy <br> habits drop too. Embrace <br> balance - just like trees do. " </h3>
       </div>
     <main class="container">
         <!-- TITLE -->
@@ -80,8 +80,8 @@
          </div>
          <!-- BMI RESULT -->
          <div class="result-box">
-            <h1 class="bmi-score">0</h1>
-            <h3 class="bmi-category">N/A</h3>
+            <h1 id="resultBmiScore" class="bmi-score">0</h1>
+            <h3 id="resultBmiCategory" class="bmi-category">N/A</h3>
          </div>
          <!-- BMI RANGE -->
           <div class="bmi-range-group">
@@ -98,7 +98,7 @@
             <section class="overweight">
                 <div class="bmi-line"></div>
                     <h5 class="bmi-label-3">Overweight</h5>
-                    <h4 class="bmi-number-3"> 25-29.5 </h4>
+                    <h4 class="bmi-number-3"> 25-29.9 </h4>
             </section>
             <section class="obese">
                 <div class="bmi-line"></div>
@@ -106,14 +106,14 @@
                     <h4 class="bmi-number-4">&gt; 30</h4>
             </section>
             <!-- BMI INDICATOR -->
-             <div class="bmi-indicator"></div>
+             <div id="bmiIndicator" class="bmi-indicator"></div>
           </div>
           <!-- BUTTONS -->
            <div class="button-group">
             <!-- RESET BUTTON -->
-             <button class="reset-button">Reset</button>
+             <button id="resetButton" class="reset-button">Reset</button>
              <!-- CALCULATE BUTTON -->
-              <button class="calculate-button">Calculate</button>
+              <button id="calculateButton" class="calculate-button">Calculate</button>
            </div>
     </main>
     <div class="footer">
@@ -128,19 +128,19 @@
           <i> Share us :</i>
            <!-- Social Media Share Icons -->
      <div class="social-icons">
-        <a href="https://www.instagram.com/" target="_blank" class="icon instagram">
+        <a href="https://www.instagram.com/https://devm30.github.io/Meta.BMI/" target="_blank" class="icon instagram">
             <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" class="icon facebook">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://devm30.github.io/Meta.BMI/" target="_blank" class="icon facebook">
             <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="https://twitter.com/intent/tweet?url=" target="_blank" class="icon twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://devm30.github.io/Meta.BMI/&text=Check%20out%20Meta%20BMI%20to%20track%20your%20health" target="_blank" class="icon twitter">
             <i class="fab fa-x-twitter"></i>
         </a>
-        <a href="https://www.linkedin.com/sharing/share-offsite/?url=" target="_blank" class="icon linkedin">
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://devm30.github.io/Meta.BMI/" target="_blank" class="icon linkedin">
             <i class="fab fa-linkedin-in"></i>
         </a>
-        <a href="https://api.whatsapp.com/send?" target="_blank" class="icon whatsapp">
+        <a href="https://api.whatsapp.com/send?text=Check%20out%20Meta%20BMI%20here:%20https://devm30.github.io/Meta.BMI/" target="_blank" class="icon whatsapp">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
